@@ -148,7 +148,5 @@ td{padding:20px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-ch
 const t=document.querySelector('.nav-toggle'),n=document.querySelector('.main-nav');
 if(t&&n){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')))}
 const h=document.querySelector('[data-reveal]');if(h)requestAnimationFrame(()=>h.classList.add('in'));
-const f=document.querySelector('#contact-form,#t101-form');
-if(f)f.addEventListener('submit',e=>{e.preventDefault();const s=document.querySelector('#form-status');s.textContent=f.id==='t101-form'?'You are registered. We will email you the session details shortly.':'Thanks — your message has been noted. We will reply by email shortly.';s.hidden=false;f.reset()});
 });
 </script></body></html>
