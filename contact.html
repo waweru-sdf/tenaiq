@@ -185,7 +185,11 @@ a.callnow{font-weight:600;color:var(--teal-700);white-space:nowrap}
 <div class="footer-col"><h4>Company</h4><a href="about.html">About TenaIQ</a><a href="about.html#models">Engagement models</a><a href="contact.html">Book a discovery call</a><a href="tel:+254725090451">Call 0725 090 451</a></div></div>
 <div class="footer-bottom"><span>&copy; 2026 TenaIQ. All rights reserved.</span><span>Health Intelligence for Africa</span></div></div></footer><script>function initBooking(){
 /* ====== SET THIS to where your Flask API runs. Localhost is used automatically when testing locally. ====== */
-const API_BASE=(location.hostname==='localhost'||location.hostname==='127.0.0.1')?'http://localhost:5000':'https://api.tenaiq.com';
+const API_BASE =
+  (location.hostname === 'localhost' ||
+   location.hostname === '127.0.0.1')
+    ? 'http://localhost:5000'
+    : 'https://tenaiq-api.onrender.com';
 const PHONE='0725 090 451';
 const f=document.querySelector('#contact-form');if(!f)return;
 const $=id=>f.querySelector('#'+id);
